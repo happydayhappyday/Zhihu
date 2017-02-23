@@ -20,6 +20,9 @@
 		20C0A1101E5D48C10038BC9A /* HttpInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C0A10F1E5D48C10038BC9A /* HttpInterface.m */; };
 		20C0A1131E5D48E80038BC9A /* HttpParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C0A1121E5D48E80038BC9A /* HttpParser.m */; };
 		20C0A1161E5D5A000038BC9A /* MainBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C0A1151E5D5A000038BC9A /* MainBL.m */; };
+		20C0A11D1E5EC3E80038BC9A /* MainTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C0A11B1E5EC3E80038BC9A /* MainTableViewCell.m */; };
+		20C0A11E1E5EC3E80038BC9A /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20C0A11C1E5EC3E80038BC9A /* MainTableViewCell.xib */; };
+		20C0A1211E5EFA560038BC9A /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C0A1201E5EFA560038BC9A /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,11 @@
 		20C0A1121E5D48E80038BC9A /* HttpParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpParser.m; sourceTree = "<group>"; };
 		20C0A1141E5D5A000038BC9A /* MainBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainBL.h; sourceTree = "<group>"; };
 		20C0A1151E5D5A000038BC9A /* MainBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainBL.m; sourceTree = "<group>"; };
+		20C0A11A1E5EC3E80038BC9A /* MainTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewCell.h; sourceTree = "<group>"; };
+		20C0A11B1E5EC3E80038BC9A /* MainTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewCell.m; sourceTree = "<group>"; };
+		20C0A11C1E5EC3E80038BC9A /* MainTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		20C0A11F1E5EFA560038BC9A /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
+		20C0A1201E5EFA560038BC9A /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
 		75022E8D824D100B4549E1E9 /* Pods-zhihu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhihu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zhihu/Pods-zhihu.debug.xcconfig"; sourceTree = "<group>"; };
 		E7FBC0EC87DFBBB150A73D05 /* Pods-zhihu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhihu.release.xcconfig"; path = "Pods/Target Support Files/Pods-zhihu/Pods-zhihu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,7 +128,6 @@
 				20C0A0E61E5C6BC80038BC9A /* Main.storyboard */,
 				20C0A0E91E5C6BC80038BC9A /* Assets.xcassets */,
 				20C0A0EB1E5C6BC80038BC9A /* LaunchScreen.storyboard */,
-				20C0A0EE1E5C6BC80038BC9A /* Info.plist */,
 				20C0A0DD1E5C6BC80038BC9A /* Supporting Files */,
 				20C0A10B1E5D46D40038BC9A /* HttpRequest.h */,
 				20C0A10C1E5D46D40038BC9A /* HttpRequest.m */,
@@ -138,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				20C0A0DE1E5C6BC80038BC9A /* main.m */,
+				20C0A0EE1E5C6BC80038BC9A /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -154,6 +162,9 @@
 		20C0A1021E5C6E200038BC9A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				20C0A11A1E5EC3E80038BC9A /* MainTableViewCell.h */,
+				20C0A11B1E5EC3E80038BC9A /* MainTableViewCell.m */,
+				20C0A11C1E5EC3E80038BC9A /* MainTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,6 +183,8 @@
 			children = (
 				20C0A1051E5C6E3E0038BC9A /* MainViewController.h */,
 				20C0A1061E5C6E3E0038BC9A /* MainViewController.m */,
+				20C0A11F1E5EFA560038BC9A /* DetailViewController.h */,
+				20C0A1201E5EFA560038BC9A /* DetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -273,6 +286,7 @@
 			files = (
 				20C0A0ED1E5C6BC80038BC9A /* LaunchScreen.storyboard in Resources */,
 				20C0A0EA1E5C6BC80038BC9A /* Assets.xcassets in Resources */,
+				20C0A11E1E5EC3E80038BC9A /* MainTableViewCell.xib in Resources */,
 				20C0A0E81E5C6BC80038BC9A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,7 +356,9 @@
 				20C0A0E21E5C6BC80038BC9A /* AppDelegate.m in Sources */,
 				20C0A10A1E5C747E0038BC9A /* Stories.m in Sources */,
 				20C0A0DF1E5C6BC80038BC9A /* main.m in Sources */,
+				20C0A11D1E5EC3E80038BC9A /* MainTableViewCell.m in Sources */,
 				20C0A10D1E5D46D40038BC9A /* HttpRequest.m in Sources */,
+				20C0A1211E5EFA560038BC9A /* DetailViewController.m in Sources */,
 				20C0A1071E5C6E3E0038BC9A /* MainViewController.m in Sources */,
 				20C0A1131E5D48E80038BC9A /* HttpParser.m in Sources */,
 				20C0A1161E5D5A000038BC9A /* MainBL.m in Sources */,
