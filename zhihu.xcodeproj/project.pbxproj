@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		078A3BF71D50C6BC493B73EC /* libPods-zhihu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FC0D4FD64F13B3A82220DA8 /* libPods-zhihu.a */; };
 		20C0A0DF1E5C6BC80038BC9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C0A0DE1E5C6BC80038BC9A /* main.m */; };
 		20C0A0E21E5C6BC80038BC9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C0A0E11E5C6BC80038BC9A /* AppDelegate.m */; };
-		20C0A0E51E5C6BC80038BC9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C0A0E41E5C6BC80038BC9A /* ViewController.m */; };
 		20C0A0E81E5C6BC80038BC9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C0A0E61E5C6BC80038BC9A /* Main.storyboard */; };
 		20C0A0EA1E5C6BC80038BC9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20C0A0E91E5C6BC80038BC9A /* Assets.xcassets */; };
 		20C0A0ED1E5C6BC80038BC9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20C0A0EB1E5C6BC80038BC9A /* LaunchScreen.storyboard */; };
 		20C0A0F81E5C6BC80038BC9A /* zhihuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C0A0F71E5C6BC80038BC9A /* zhihuTests.m */; };
+		20C0A1071E5C6E3E0038BC9A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C0A1061E5C6E3E0038BC9A /* MainViewController.m */; };
+		20C0A10A1E5C747E0038BC9A /* Stories.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C0A1091E5C747E0038BC9A /* Stories.m */; };
+		20C0A10D1E5D46D40038BC9A /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C0A10C1E5D46D40038BC9A /* HttpRequest.m */; };
+		20C0A1101E5D48C10038BC9A /* HttpInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C0A10F1E5D48C10038BC9A /* HttpInterface.m */; };
+		20C0A1131E5D48E80038BC9A /* HttpParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C0A1121E5D48E80038BC9A /* HttpParser.m */; };
+		20C0A1161E5D5A000038BC9A /* MainBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C0A1151E5D5A000038BC9A /* MainBL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,12 +33,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FC0D4FD64F13B3A82220DA8 /* libPods-zhihu.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-zhihu.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C0A0DA1E5C6BC80038BC9A /* zhihu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhihu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C0A0DE1E5C6BC80038BC9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20C0A0E01E5C6BC80038BC9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		20C0A0E11E5C6BC80038BC9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		20C0A0E31E5C6BC80038BC9A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		20C0A0E41E5C6BC80038BC9A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		20C0A0E71E5C6BC80038BC9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20C0A0E91E5C6BC80038BC9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20C0A0EC1E5C6BC80038BC9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +45,20 @@
 		20C0A0F31E5C6BC80038BC9A /* zhihuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zhihuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C0A0F71E5C6BC80038BC9A /* zhihuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zhihuTests.m; sourceTree = "<group>"; };
 		20C0A0F91E5C6BC80038BC9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20C0A1051E5C6E3E0038BC9A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		20C0A1061E5C6E3E0038BC9A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		20C0A1081E5C747E0038BC9A /* Stories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stories.h; sourceTree = "<group>"; };
+		20C0A1091E5C747E0038BC9A /* Stories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stories.m; sourceTree = "<group>"; };
+		20C0A10B1E5D46D40038BC9A /* HttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		20C0A10C1E5D46D40038BC9A /* HttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		20C0A10E1E5D48C10038BC9A /* HttpInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpInterface.h; sourceTree = "<group>"; };
+		20C0A10F1E5D48C10038BC9A /* HttpInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpInterface.m; sourceTree = "<group>"; };
+		20C0A1111E5D48E80038BC9A /* HttpParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpParser.h; sourceTree = "<group>"; };
+		20C0A1121E5D48E80038BC9A /* HttpParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpParser.m; sourceTree = "<group>"; };
+		20C0A1141E5D5A000038BC9A /* MainBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainBL.h; sourceTree = "<group>"; };
+		20C0A1151E5D5A000038BC9A /* MainBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainBL.m; sourceTree = "<group>"; };
+		75022E8D824D100B4549E1E9 /* Pods-zhihu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhihu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zhihu/Pods-zhihu.debug.xcconfig"; sourceTree = "<group>"; };
+		E7FBC0EC87DFBBB150A73D05 /* Pods-zhihu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zhihu.release.xcconfig"; path = "Pods/Target Support Files/Pods-zhihu/Pods-zhihu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078A3BF71D50C6BC493B73EC /* libPods-zhihu.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +80,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01A7FFB7083B47AA6FB2AFEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				75022E8D824D100B4549E1E9 /* Pods-zhihu.debug.xcconfig */,
+				E7FBC0EC87DFBBB150A73D05 /* Pods-zhihu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		20C0A0D11E5C6BC70038BC9A = {
 			isa = PBXGroup;
 			children = (
 				20C0A0DC1E5C6BC80038BC9A /* zhihu */,
 				20C0A0F61E5C6BC80038BC9A /* zhihuTests */,
 				20C0A0DB1E5C6BC80038BC9A /* Products */,
+				01A7FFB7083B47AA6FB2AFEF /* Pods */,
+				4674A2D665AB7A557D7BF143 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,15 +112,24 @@
 		20C0A0DC1E5C6BC80038BC9A /* zhihu */ = {
 			isa = PBXGroup;
 			children = (
+				20C0A1021E5C6E200038BC9A /* View */,
+				20C0A1031E5C6E200038BC9A /* Model */,
+				20C0A1041E5C6E200038BC9A /* Controller */,
 				20C0A0E01E5C6BC80038BC9A /* AppDelegate.h */,
 				20C0A0E11E5C6BC80038BC9A /* AppDelegate.m */,
-				20C0A0E31E5C6BC80038BC9A /* ViewController.h */,
-				20C0A0E41E5C6BC80038BC9A /* ViewController.m */,
 				20C0A0E61E5C6BC80038BC9A /* Main.storyboard */,
 				20C0A0E91E5C6BC80038BC9A /* Assets.xcassets */,
 				20C0A0EB1E5C6BC80038BC9A /* LaunchScreen.storyboard */,
 				20C0A0EE1E5C6BC80038BC9A /* Info.plist */,
 				20C0A0DD1E5C6BC80038BC9A /* Supporting Files */,
+				20C0A10B1E5D46D40038BC9A /* HttpRequest.h */,
+				20C0A10C1E5D46D40038BC9A /* HttpRequest.m */,
+				20C0A10E1E5D48C10038BC9A /* HttpInterface.h */,
+				20C0A10F1E5D48C10038BC9A /* HttpInterface.m */,
+				20C0A1111E5D48E80038BC9A /* HttpParser.h */,
+				20C0A1121E5D48E80038BC9A /* HttpParser.m */,
+				20C0A1141E5D5A000038BC9A /* MainBL.h */,
+				20C0A1151E5D5A000038BC9A /* MainBL.m */,
 			);
 			path = zhihu;
 			sourceTree = "<group>";
@@ -111,6 +151,39 @@
 			path = zhihuTests;
 			sourceTree = "<group>";
 		};
+		20C0A1021E5C6E200038BC9A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		20C0A1031E5C6E200038BC9A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				20C0A1081E5C747E0038BC9A /* Stories.h */,
+				20C0A1091E5C747E0038BC9A /* Stories.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		20C0A1041E5C6E200038BC9A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20C0A1051E5C6E3E0038BC9A /* MainViewController.h */,
+				20C0A1061E5C6E3E0038BC9A /* MainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4674A2D665AB7A557D7BF143 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0FC0D4FD64F13B3A82220DA8 /* libPods-zhihu.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20C0A0FC1E5C6BC80038BC9A /* Build configuration list for PBXNativeTarget "zhihu" */;
 			buildPhases = (
+				F03D91B856560208439062A1 /* [CP] Check Pods Manifest.lock */,
 				20C0A0D61E5C6BC70038BC9A /* Sources */,
 				20C0A0D71E5C6BC70038BC9A /* Frameworks */,
 				20C0A0D81E5C6BC70038BC9A /* Resources */,
+				28574BD8EA7CFC39089EFE11 /* [CP] Embed Pods Frameworks */,
+				7FAB438CA99F774CDF017F89 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,14 +286,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28574BD8EA7CFC39089EFE11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zhihu/Pods-zhihu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FAB438CA99F774CDF017F89 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-zhihu/Pods-zhihu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F03D91B856560208439062A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		20C0A0D61E5C6BC70038BC9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20C0A0E51E5C6BC80038BC9A /* ViewController.m in Sources */,
 				20C0A0E21E5C6BC80038BC9A /* AppDelegate.m in Sources */,
+				20C0A10A1E5C747E0038BC9A /* Stories.m in Sources */,
 				20C0A0DF1E5C6BC80038BC9A /* main.m in Sources */,
+				20C0A10D1E5D46D40038BC9A /* HttpRequest.m in Sources */,
+				20C0A1071E5C6E3E0038BC9A /* MainViewController.m in Sources */,
+				20C0A1131E5D48E80038BC9A /* HttpParser.m in Sources */,
+				20C0A1161E5D5A000038BC9A /* MainBL.m in Sources */,
+				20C0A1101E5D48C10038BC9A /* HttpInterface.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +478,7 @@
 		};
 		20C0A0FD1E5C6BC80038BC9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75022E8D824D100B4549E1E9 /* Pods-zhihu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W2P2A5AUVA;
@@ -361,6 +491,7 @@
 		};
 		20C0A0FE1E5C6BC80038BC9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7FBC0EC87DFBBB150A73D05 /* Pods-zhihu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = W2P2A5AUVA;
@@ -416,6 +547,7 @@
 				20C0A0FE1E5C6BC80038BC9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20C0A0FF1E5C6BC80038BC9A /* Build configuration list for PBXNativeTarget "zhihuTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +556,7 @@
 				20C0A1011E5C6BC80038BC9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
